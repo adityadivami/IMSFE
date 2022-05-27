@@ -31,18 +31,18 @@
     "Departments": [
       {
         "id": 1,
-        "label": "Head",
-        "abbrevation": "head"
+        "name": "Head",
+        "abbr": "head"
       },
       {
         "id": 2,
-        "label": "Admin",
-        "abbrevation": "admin"
+        "name": "Admin",
+        "abbr": "admin"
       },
       {
         "id": 3,
-        "label": "Interviewer",
-        "abbrevation": "Interviewer"
+        "name": "Interviewer",
+        "abbr": "Interviewer"
       }
     ],
     "variant": "outlined"
@@ -54,20 +54,20 @@
     "Departments": [
       {
         "id": 1,
-        "label": "Development",
-        "abbrevation": "development",
+        "name": "Development",
+        "abbr": "development",
         "selected": false
       },
       {
         "id": 2,
-        "label": "Design",
-        "abbrevation": "design",
+        "name": "Design",
+        "abbr": "design",
         "selected": false
       },
       {
         "id": 3,
-        "label": "QA",
-        "abbrevation": "qa",
+        "name": "QA",
+        "abbr": "qa",
         "selected": false
       }
     ],

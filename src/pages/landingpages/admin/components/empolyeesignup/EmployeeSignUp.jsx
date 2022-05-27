@@ -52,7 +52,7 @@ const EmployeeSignUp = () => {
   const styles = useStyles();
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log(loginFormDetails, departmentState, datePickerValue);
+    console.log(loginFormDetails);
     // post api call for login authentication
   };
   //   console.log(departmentState);
@@ -123,7 +123,7 @@ const EmployeeSignUp = () => {
                             value={department?.id}
                             onClick={() => setDeapartmentState(department)}
                           >
-                            {department.label}
+                            {department.name}
                           </MenuItem>
                         );
                       })}

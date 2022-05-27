@@ -7,11 +7,11 @@ import Button from "@mui/material/Button";
 function App() {
   return (
     <>
-      <LoginPage />
-      {/* <AdminPage />
-      <HeadPage />
+      {/* <LoginPage /> */}
+      <AdminPage />
+      {/* <HeadPage />
       <JobSeekerPage />
-      <Button variant="contained">Hello World</Button> */}
+      <Button variant="contained">Hello World</Button>  */}
     </>
   );
 }

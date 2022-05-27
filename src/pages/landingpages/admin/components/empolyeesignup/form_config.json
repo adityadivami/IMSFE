@@ -1,0 +1,76 @@
+[
+  {
+    "label": "Name",
+    "name": "name",
+    "type": "text",
+    "variant": "outlined"
+  },
+  {
+    "label": "",
+    "name": "dob",
+    "type": "date",
+    "variant": "outlined"
+  },
+  {
+    "label": "Email",
+    "name": "email",
+    "type": "email",
+    "variant": "outlined"
+  },
+
+  {
+    "label": "User Name",
+    "name": "userName",
+    "type": "text",
+    "variant": "outlined"
+  },
+  {
+    "label": "Roles ",
+    "name": "roles",
+    "type": "select",
+    "Departments": [
+      {
+        "id": 1,
+        "label": "Head",
+        "abbrevation": "head"
+      },
+      {
+        "id": 2,
+        "label": "Admin",
+        "abbrevation": "admin"
+      },
+      {
+        "id": 3,
+        "label": "Interviewer",
+        "abbrevation": "Interviewer"
+      }
+    ],
+    "variant": "outlined"
+  },
+  {
+    "label": "Departments",
+    "name": "department",
+    "type": "select",
+    "Departments": [
+      {
+        "id": 1,
+        "label": "Development",
+        "abbrevation": "development",
+        "selected": false
+      },
+      {
+        "id": 2,
+        "label": "Design",
+        "abbrevation": "design",
+        "selected": false
+      },
+      {
+        "id": 3,
+        "label": "QA",
+        "abbrevation": "qa",
+        "selected": false
+      }
+    ],
+    "variant": "outlined"
+  }
+]

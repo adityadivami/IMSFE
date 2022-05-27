@@ -1,0 +1,14 @@
+[
+  {
+    "label": "User Name",
+    "name": "userName",
+    "type": "text",
+    "variant": "outlined"
+  },
+  {
+    "label": "Password",
+    "name": "password",
+    "type": "password",
+    "variant": "outlined"
+  }
+]

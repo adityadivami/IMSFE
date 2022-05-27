@@ -8,10 +8,10 @@ function App() {
   return (
     <>
       <LoginPage />
-      <AdminPage />
+      {/* <AdminPage />
       <HeadPage />
       <JobSeekerPage />
-      <Button variant="contained">Hello World</Button>
+      <Button variant="contained">Hello World</Button> */}
     </>
   );
 }

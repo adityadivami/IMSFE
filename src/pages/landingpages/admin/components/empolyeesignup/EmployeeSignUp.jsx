@@ -86,9 +86,7 @@ const EmployeeSignUp = () => {
                     <DatePicker
                       label="Basic example"
                       value={datePickerValue}
-                      onChange={(newValue) => {
-                        setDatePickerValue(newValue);
-                      }}
+                      onChange={(value) => handleChange("", value)}
                       renderInput={(params) => <TextField {...params} />}
                     />
                   </LocalizationProvider>

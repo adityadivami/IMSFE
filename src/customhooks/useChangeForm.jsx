@@ -7,10 +7,10 @@ const useChangeForm = () => {
     name: "",
     email: "",
   });
-  const handleChange = (e) => {
+  const handleChange = (e, value) => {
     setLoginFormDetails({
       ...loginFormDetails,
-      [e.target.name]: e.target.value,
+      [e?.target?.name ?? "value"]: value ?? e.target.value,
     });
   };
   return [loginFormDetails, handleChange, setLoginFormDetails];

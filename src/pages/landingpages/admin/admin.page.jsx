@@ -25,10 +25,9 @@ const AdminPage = (props) => {
       )
       .catch((error) => console.log(error));
   }, []);
-  
+
   return (
     <div className={styles.container}>
-      {/* <h1>Admin Page</h1> */}
       <EmployeeSignUp formdata={formdata} />
     </div>
   );

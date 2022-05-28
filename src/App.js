@@ -14,7 +14,7 @@ function App() {
         <Route path="login" element={<LoginPage />} />
         <Route path="head" element={<HeadPage />} />
         <Route path="candidate" element={<JobSeekerPage />} />
-        <Route path="matrix" element={<Matrix />} />
+        <Route path="matrix " element={<Matrix />} />
       </Routes>
     </BrowserRouter>
   );

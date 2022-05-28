@@ -93,14 +93,14 @@ export default class Matrix extends Component {
   render() {
     const days = [
       [
-        { id: 1, number: 1 },
+        { id: 1, number: 1, isSelected: true, periods: 2 },
         { id: 2, number: 2 },
-        { id: 3, number: 3 },
-        { id: 4, number: 4 },
+        null,
+        { id: 3, number: "3", isReserved: true },
+        { id: 4, number: "4" },
+        null,
         { id: 5, number: 5 },
         { id: 6, number: 6 },
-        { id: 7, number: 7 },
-        { id: 8, number: 8 },
       ],
       [
         { id: 7, number: 1, isReserved: true, periods: 3 },

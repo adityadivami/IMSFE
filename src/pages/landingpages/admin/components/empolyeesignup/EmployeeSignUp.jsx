@@ -1,5 +1,5 @@
 import { Box } from "@mui/system";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import InputField from "../../../../../components/TextField/InputField.Component";
 import formConfig from "./form_config.json";
@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { cloneDeep, find, findIndex } from "lodash";
 
 const useStyles = makeStyles({
   formContainer: {
@@ -41,7 +42,20 @@ const useStyles = makeStyles({
     height: "56px",
   },
 });
-const EmployeeSignUp = () => {
+const EmployeeSignUp = ({ formdata }) => {
+  const [data, setdata] = useState(formConfig);
+
+  useEffect(() => {
+    if (formdata) {
+      const rolesIndex = findIndex(data, { name: "roles" });
+      const departmentsIndex = findIndex(data, { name: "department" });
+      const obj = cloneDeep(data);
+      obj[rolesIndex].Departments = formdata.roles;
+      obj[departmentsIndex].Departments = formdata.departments;
+      setdata(obj);
+    }
+  }, [formdata]);
+
   const [loginFormDetails, handleChange] = useChangeForm();
   const [datePickerValue, setDatePickerValue] = useState();
   const [departmentState, setDeapartmentState] = useState({
@@ -52,15 +66,12 @@ const EmployeeSignUp = () => {
   const styles = useStyles();
   const formSubmit = (e) => {
     e.preventDefault();
-    console.log(loginFormDetails, departmentState, datePickerValue);
-    // post api call for login authentication
   };
-  //   console.log(departmentState);
   return (
     <>
       <div className={styles.formContainer}>
         <form className={styles.loginForm} onSubmit={formSubmit}>
-          {formConfig.map((formInput, key) => {
+          {data?.map((formInput, key) => {
             switch (formInput.type) {
               case "text":
                 return (

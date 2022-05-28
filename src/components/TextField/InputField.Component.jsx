@@ -4,7 +4,11 @@ import { TextField } from "@mui/material";
 const InputField = ({ formInput, handleChange }) => {
   return (
     <>
-      <TextField onChange={handleChange} {...formInput} />
+      <TextField
+        onChange={handleChange}
+        {...formInput}
+        fullWidth
+      />
     </>
   );
 };

@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 import { Button } from "@mui/material";
 const useStyles = makeStyles({
   loginButton: {
-    width: "100%",
+    width: "60%",
     height: "56px",
   },
 });
